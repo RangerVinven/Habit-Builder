@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Navbar from '../components/Navbar';
 
 export default function Home() {
 	return (
@@ -10,6 +11,22 @@ export default function Home() {
 			</Head>
 
 			<main>
+				<div className="h-screen bg-black">
+					<Navbar />
+					
+					<div className="flex justify-center mt-44 text-white">
+						<div className="flex items-center justify-center">
+							<div>
+								<div className="flex justify-start">
+									<div className="mx-5 font-extralight w-17 h-fit font-serif text-3xl leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod vel viverra.</div>
+								</div>
+								<div className="flex justify-end mt-6">
+									<h3 className="mx-5 font-serif text-3xl">- James Clear</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</main>
 
 			<footer>				

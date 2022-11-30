@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar';
 
+import { animate, motion } from "framer-motion";
+
 export default function Home() {
 	return (
 		<div>
@@ -14,17 +16,30 @@ export default function Home() {
 				<div className="h-screen bg-black">
 					<Navbar />
 					
-					<div className="flex justify-center mt-44 text-white">
-						<div className="flex items-center justify-center">
-							<div>
-								<div className="flex justify-start">
-									<div className="mx-5 font-extralight w-17 h-fit font-serif text-3xl leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod vel viverra.</div>
-								</div>
-								<div className="flex justify-end mt-6">
-									<h3 className="mx-5 font-serif text-3xl">- James Clear</h3>
-								</div>
+					<div className="ml-3 flex justify-center mt-44 text-white">
+						<motion.div transition={{ duration: 0.75 }} initial={{
+							y: 200,
+							opacity: 0,
+						}} animate={{
+							y: 0,
+							opacity: 1
+						}}>
+							<div className="h-full flex items-center justify-center">
+									<div className="h-full w-3 bg-purple">
+										
+									</div>
+
+									<div>
+										<div className="flex justify-start">
+											<div className="mx-5 font-extralight w-17 h-fit font-serif text-3xl leading-relaxed">"We don't rise to the levels of our goals, we fall to the level of our Systems."</div>
+										</div>
+										<div className="flex justify-end mt-6">
+											<h3 className="mx-5 font-serif text-3xl">- James Clear</h3>
+										</div>
+									</div>
+								
 							</div>
-						</div>
+						</motion.div>
 					</div>
 				</div>
 			</main>

@@ -15,7 +15,7 @@ export default function GoodHabitStepsAccordian() {
                     </AccordionButton>
                     </h3>
                     <AccordionPanel pb={8}>
-                        To make your habit, you first need to remember to the habit in the first place. If you want to make a habit but don't remember to do it, then it's not going to stick. This step is all about things you can do to remember your to-be habit in the first-place.
+                        To make your habit, you first need to remember to the habit in the first place. If you want to make a habit but don't remember to do it, then it's not going to stick. This step is all about things you can do to remember your to-be habit.
                     </AccordionPanel>
                 </AccordionItem>
 

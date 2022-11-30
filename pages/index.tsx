@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar';
 
 import { animate, motion } from "framer-motion";
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box } from '@chakra-ui/react';
 
 export default function Home() {
 	return (
@@ -46,10 +47,84 @@ export default function Home() {
 							y: 0,
 							opacity: 1,
 						}}>
-				<div className="h-full -my-36 bg-white rounded-t-lg p-2">
+				<div className="h-96 -my-36 bg-white rounded-t-lg p-2">
 					<div className="flex flex-col justify-center items-center">
 						<h1 className="text-3xl text-center"><b>The</b> Website For Making Long-Lasting Habits</h1>
 						<h3 className="text-xl text-center mt-2">Based Off James Clear's "Atomic Habits"</h3>
+					</div>
+
+					<div className="mt-10 flex justify-center items-center w-full">
+						<div className="border-2 border-slate-200 rounded-md p-2 w-96">
+							<Accordion allowMultiple>
+								<AccordionItem>
+									<h3 className="text-xl mb-2 pb-1 border-b border-slate-200">
+									<AccordionButton>
+										<Box flex='1' textAlign='left'>
+											Make It Obvious
+										</Box>
+										<AccordionIcon />
+									</AccordionButton>
+									</h3>
+									<AccordionPanel pb={8}>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+									veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+									commodo consequat.
+									</AccordionPanel>
+								</AccordionItem>
+
+								<AccordionItem>
+									<h3 className="text-xl mb-2 pb-1 border-b border-slate-200">
+									<AccordionButton>
+										<Box flex='1' textAlign='left'>
+											Make It Attractive
+										</Box>
+										<AccordionIcon />
+									</AccordionButton>
+									</h3>
+									<AccordionPanel pb={8}>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+									veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+									commodo consequat.
+									</AccordionPanel>
+								</AccordionItem>
+
+								<AccordionItem>
+									<h3 className="text-xl mb-2 pb-1 border-b border-slate-200">
+									<AccordionButton>
+										<Box flex='1' textAlign='left'>
+											Make It Easy
+										</Box>
+										<AccordionIcon />
+									</AccordionButton>
+									</h3>
+									<AccordionPanel pb={8}>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+									veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+									commodo consequat.
+									</AccordionPanel>
+								</AccordionItem>
+
+								<AccordionItem>
+									<h3 className="text-xl">
+									<AccordionButton>
+										<Box flex='1' textAlign='left'>
+											Make It Satisfying
+										</Box>
+										<AccordionIcon />
+									</AccordionButton>
+									</h3>
+									<AccordionPanel pb={8}>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+									veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+									commodo consequat.
+									</AccordionPanel>
+								</AccordionItem>
+							</Accordion>
+						</div>
 					</div>
 				</div>
 				</motion.div>

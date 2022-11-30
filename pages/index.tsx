@@ -12,8 +12,8 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main>
-				<div className="h-screen bg-black">
+			<main className="bg-black">
+				<div className="h-screen">
 					<Navbar />
 					
 					<div className="ml-3 flex justify-center mt-44 text-white">
@@ -37,11 +37,22 @@ export default function Home() {
 											<h3 className="mx-5 font-serif text-3xl">- James Clear</h3>
 										</div>
 									</div>
-								
 							</div>
 						</motion.div>
 					</div>
 				</div>
+				<motion.div transition={{ duration: 0.75 }} initial={{
+							y: 200,
+							opacity: 0,
+						}} animate={{
+							y: 0,
+							opacity: 1,
+						}}>
+				<div className="h-32 -my-36 bg-white rounded-t-lg p-2 text-purple">
+							
+					
+				</div>
+				</motion.div>
 			</main>
 
 			<footer>				

@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import { animate, motion } from "framer-motion";
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box } from '@chakra-ui/react';
 import GoodHabitStepsAccordian from '../components/indexPage/GoodHabitStepsAccordian';
+import BadHabitStepsAccordian from '../components/indexPage/BadHabitStepsAccordian';
 
 export default function Home() {
 	return (
@@ -53,8 +54,10 @@ export default function Home() {
 						<h3 className="text-xl text-center mt-2">Based Off James Clear's "Atomic Habits"</h3>
 					</div>
 
-					<div className="mt-10 flex justify-center items-center w-full">
+					<div className="mt-10 mb-5 flex flex-col justify-center items-center w-full">
 						<GoodHabitStepsAccordian />
+						<h3 className="my-7 text-lg"><p className="inline font-bold text-purple">Or</p>, For Breaking Bad Habits:</h3>
+						<BadHabitStepsAccordian />
 					</div>
 				</div>
 				</motion.div>

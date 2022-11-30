@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar';
 
 import { animate, motion } from "framer-motion";
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box } from '@chakra-ui/react';
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button } from '@chakra-ui/react';
 import GoodHabitStepsAccordian from '../components/indexPage/GoodHabitStepsAccordian';
 import BadHabitStepsAccordian from '../components/indexPage/BadHabitStepsAccordian';
 
@@ -58,6 +58,10 @@ export default function Home() {
 						<GoodHabitStepsAccordian />
 						<h3 className="my-7 text-lg"><p className="inline font-bold text-purple">Or</p>, For Breaking Bad Habits:</h3>
 						<BadHabitStepsAccordian />
+
+						<div className="mt-10">
+							<button className="bg-purple font-semibold rounded-md text-white py-2 px-10 mb-5 text-lg">Make/Break Your Habits Today!</button>
+						</div>
 					</div>
 				</div>
 				</motion.div>

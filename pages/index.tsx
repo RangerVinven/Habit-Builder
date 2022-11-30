@@ -25,9 +25,7 @@ export default function Home() {
 							opacity: 1
 						}}>
 							<div className="h-full flex items-center justify-center">
-									<div className="h-full w-3 bg-purple">
-										
-									</div>
+									<div className="h-full w-3 bg-purple"></div>
 
 									<div>
 										<div className="flex justify-start">
@@ -48,9 +46,11 @@ export default function Home() {
 							y: 0,
 							opacity: 1,
 						}}>
-				<div className="h-32 -my-36 bg-white rounded-t-lg p-2 text-purple">
-							
-					
+				<div className="h-full -my-36 bg-white rounded-t-lg p-2">
+					<div className="flex flex-col justify-center items-center">
+						<h1 className="text-3xl text-center"><b>The</b> Website For Making Long-Lasting Habits</h1>
+						<h3 className="text-xl text-center mt-2">Based Off James Clear's "Atomic Habits"</h3>
+					</div>
 				</div>
 				</motion.div>
 			</main>

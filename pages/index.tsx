@@ -54,9 +54,7 @@ export default function Home() {
 					</div>
 
 					<div className="mt-10 flex justify-center items-center w-full">
-						<div className="border-2 border-slate-200 rounded-md p-2 w-96">
-							<GoodHabitStepsAccordian />
-						</div>
+						<GoodHabitStepsAccordian />
 					</div>
 				</div>
 				</motion.div>

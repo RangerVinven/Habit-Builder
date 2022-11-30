@@ -26,8 +26,7 @@ export default function Home() {
 							opacity: 1
 						}}>
 							<div className="h-full flex items-center justify-center">
-									<div className="h-full w-3 bg-purple"></div>
-
+									<div className="h-full w-3 bg-purple" />
 									<div>
 										<div className="flex justify-start">
 											<div className="mx-5 font-extralight w-17 h-fit font-serif text-3xl leading-relaxed">"We don't rise to the levels of our goals, we fall to the level of our Systems."</div>
@@ -49,7 +48,7 @@ export default function Home() {
 						}}>
 				<div className="h-96 -my-36 bg-white rounded-t-lg p-2">
 					<div className="flex flex-col justify-center items-center">
-						<h1 className="text-3xl text-center"><b>The</b> Website For Making Long-Lasting Habits</h1>
+						<h1 className="text-3xl text-center"><b className="text-purple">The</b> Website For Making Long-Lasting Habits</h1>
 						<h3 className="text-xl text-center mt-2">Based Off James Clear's "Atomic Habits"</h3>
 					</div>
 
@@ -60,7 +59,7 @@ export default function Home() {
 									<h3 className="text-xl mb-2 pb-1 border-b border-slate-200">
 									<AccordionButton>
 										<Box flex='1' textAlign='left'>
-											Make It Obvious
+											Make It <b className="inline text-purple">Obvious</b>
 										</Box>
 										<AccordionIcon />
 									</AccordionButton>
@@ -77,7 +76,7 @@ export default function Home() {
 									<h3 className="text-xl mb-2 pb-1 border-b border-slate-200">
 									<AccordionButton>
 										<Box flex='1' textAlign='left'>
-											Make It Attractive
+											Make It <b className="inline text-purple">Attractive</b>
 										</Box>
 										<AccordionIcon />
 									</AccordionButton>
@@ -94,7 +93,7 @@ export default function Home() {
 									<h3 className="text-xl mb-2 pb-1 border-b border-slate-200">
 									<AccordionButton>
 										<Box flex='1' textAlign='left'>
-											Make It Easy
+											Make It <b className="inline text-purple">Easy</b>
 										</Box>
 										<AccordionIcon />
 									</AccordionButton>
@@ -111,7 +110,7 @@ export default function Home() {
 									<h3 className="text-xl">
 									<AccordionButton>
 										<Box flex='1' textAlign='left'>
-											Make It Satisfying
+											Make It <b className="inline text-purple">Satisfying</b>
 										</Box>
 										<AccordionIcon />
 									</AccordionButton>

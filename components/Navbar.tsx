@@ -7,7 +7,7 @@ export default function Navbar() {
                 <h1 className="font-bold text-3xl text-white">Habitus</h1>
             </div>
             <div className="mr-3 my-3">
-                <button className="bg-purple font-medium rounded-md text-white py-2 px-4 text-lg">My Habits</button>
+                <button className="bg-purple font-semibold rounded-md text-white py-2 px-4 text-lg">My Habits</button>
             </div>
         </div>
     );
